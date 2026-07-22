@@ -24,7 +24,7 @@ The goal of the project was to build a complete production-style application wit
 
 - Create, update, and delete habits
 
-- Customize habits with colors and emojis
+- Personalize habits with custom colors
 
 - Hide/show habits
 
