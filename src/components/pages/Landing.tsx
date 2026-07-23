@@ -26,7 +26,7 @@ function Landing() {
           </Link>
         </div>
         <img
-          src="/public/Hero.svg"
+          src="/Hero.svg"
           alt="Hero"
           className="absolute top-1/2 sm:top-10 w-[130%] max-w-none sm:w-360 z-0"
         />
