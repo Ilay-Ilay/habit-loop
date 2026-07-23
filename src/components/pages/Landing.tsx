@@ -28,7 +28,7 @@ function Landing() {
         <img
           src="/Hero.svg"
           alt="Hero"
-          className="absolute top-1/2 sm:top-10 w-[130%] max-w-none sm:w-360 z-0"
+          className="absolute top-1/2 sm:top-10 w-[130%] max-w-none sm:w-360 z-0 pointer-events-none"
         />
       </div>
     </section>
