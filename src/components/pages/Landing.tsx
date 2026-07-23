@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Landing() {
   return (
-    <section className="flex items-center bg-sidebar p-8 min-h-screen">
+    <section className="flex items-center p-8 min-h-screen relative">
       <div className="flex flex-col gap-8 items-center mx-auto">
         <div className="flex flex-col gap-4 text-center items-center p-8 md:p-24">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
