@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: "", dark: ".dark" } as const;
 
-// const INITIAL_DIMENSION = { width: 320, height: 200 } as const
 type TooltipNameType = number | string;
 
 export type ChartConfig = Record<
@@ -68,7 +67,7 @@ function ChartContainer({
         {...props}
       >
         <ChartStyle id={chartId} config={config} />
-        <RechartsPrimitive.ResponsiveContainer width="100%" height="100%">
+        <RechartsPrimitive.ResponsiveContainer>
           {children}
         </RechartsPrimitive.ResponsiveContainer>
       </div>

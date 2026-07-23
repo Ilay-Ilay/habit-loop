@@ -34,7 +34,7 @@ function LoginForm() {
 
   return (
     <div className="w-full sm:max-w-[30%] flex flex-col gap-8">
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 text-center">
         <h1 className="text-3xl sm:text-5xl font-medium">Welcome back</h1>
 
         <span className="text-muted-foreground text-sm">

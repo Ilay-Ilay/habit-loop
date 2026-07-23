@@ -50,14 +50,17 @@ function InsightsBarChart({ logs }: InsightsBarChartProps) {
   }));
   const sorted = [...chartData].sort((a, b) => b.completed - a.completed);
   return (
-    <div className="border flex flex-col flex-1 p-4 sm:p-8 gap-8 border-border rounded-md">
+    <div className="border flex flex-1 flex-col min-w-0 min-h-90 p-4 sm:p-8 gap-6 rounded-md">
       <div className="flex flex-col gap-1">
         <h3 className="text-xl font-semibold">Completion patterns</h3>
         <span className="text-sm text-muted-foreground">
           Discover your best days
         </span>
       </div>
-      <ChartContainer config={chartConfig} className="min-h-25 md:min-h-50">
+      <ChartContainer
+        config={chartConfig}
+        className="w-full flex-1 min-h-0 aspect-auto"
+      >
         <BarChart
           width={undefined}
           height={undefined}
@@ -67,7 +70,7 @@ function InsightsBarChart({ logs }: InsightsBarChartProps) {
           <CartesianGrid vertical={false} />
           <XAxis
             dataKey="day"
-            tickMargin={8}
+            tickMargin={16}
             tickLine={false}
             axisLine={false}
             fontSize={12}

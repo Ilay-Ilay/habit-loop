@@ -88,14 +88,14 @@ function InsightsAreaChart({ logs }: InsightsAreaChartProps) {
     }));
   const sorted = [...chartData].sort((a, b) => b.completed - a.completed);
   return (
-    <div className="border flex flex-col flex-1 p-4 sm:p-8 gap-8 border-border rounded-md">
+    <div className="border flex flex-1 flex-col min-w-0 min-h-90 p-4 sm:p-8 gap-6 rounded-md">
       <div className="flex flex-col gap-1">
         <h3 className="text-xl font-semibold">Monthly trend</h3>
         <span className="text-sm text-muted-foreground">{`${monthNames[monthDate.getMonth() - 5]} - ${monthNames[monthDate.getMonth()]} ${monthDate.getFullYear()}`}</span>
       </div>
       <ChartContainer
         config={chartConfig}
-        className="h-20 min-h-15 md:min-h-50"
+        className="w-full flex-1 min-h-0 aspect-auto"
       >
         <AreaChart
           accessibilityLayer

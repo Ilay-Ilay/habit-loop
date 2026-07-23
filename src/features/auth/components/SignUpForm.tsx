@@ -89,7 +89,6 @@ function SignupForm() {
                         Password should be at least 15 characters OR at least 8
                         characters including a number and a lowercase letter.
                       </FieldDescription>
-
                       {fieldState.error && (
                         <FieldError errors={[fieldState.error]} />
                       )}

@@ -31,7 +31,7 @@ function InsightsPage() {
             isLoading={isLoading}
           />
         </div>
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 items-stretch">
           <InsightsBarChart logs={logs} />
           <InsightsAreaChart logs={logs} />
         </div>
