@@ -102,3 +102,19 @@ The goal of the project was to build a complete production-style application wit
 ## Architecture
 
 The application follows a feature-based structure
+
+## Screenshots
+
+### Landing Page
+
+![Insights](./screenshots/Insights.png)
+
+### Habits
+
+![Week](./screenshots/Week.png)
+![Month](./screenshots/Month.png)
+![Month-dark](./screenshots/Month-dark.png.png)
+
+### Account
+
+![Week](./screenshots/Account.png)
