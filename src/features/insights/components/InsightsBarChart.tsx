@@ -57,18 +57,20 @@ function InsightsBarChart({ logs }: InsightsBarChartProps) {
           Discover your best days
         </span>
       </div>
-      <ChartContainer config={chartConfig} className="min-h-50">
+      <ChartContainer config={chartConfig} className="min-h-25 md:min-h-50">
         <BarChart
-          accessibilityLayer
+          width={undefined}
+          height={undefined}
           data={chartData}
-          margin={{ left: 0, right: 0, bottom: 4, top: 0 }}
+          margin={{ top: 0, right: 8, left: 8, bottom: 4 }}
         >
           <CartesianGrid vertical={false} />
           <XAxis
-            dataKey={"day"}
-            tickMargin={16}
+            dataKey="day"
+            tickMargin={8}
             tickLine={false}
             axisLine={false}
+            fontSize={12}
           />
           <YAxis dataKey={"completed"} hide fontSize={12} />
           <Bar dataKey="completed" fill={selectedHabit?.color} radius={4} />
